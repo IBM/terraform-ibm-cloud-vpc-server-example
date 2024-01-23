@@ -1,0 +1,5 @@
+import_certs
+terraform.tfstate*
+.terraform*
+temp
+my_vpn_server.ovpn
