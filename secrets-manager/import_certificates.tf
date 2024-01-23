@@ -36,7 +36,7 @@ resource "tls_locally_signed_cert" "client" {
   ca_private_key_pem = tls_self_signed_cert.ca.private_key_pem
   ca_cert_pem        = tls_self_signed_cert.ca.cert_pem
 
-  validity_period_hours = 87600
+  validity_period_hours = 8760
 
   allowed_uses = [
     "key_encipherment",
@@ -65,7 +65,7 @@ resource "tls_locally_signed_cert" "server" {
   ca_private_key_pem = tls_self_signed_cert.ca.private_key_pem
   ca_cert_pem        = tls_self_signed_cert.ca.cert_pem
 
-  validity_period_hours = 87600
+  validity_period_hours = 8760
 
   allowed_uses = [
     "key_encipherment",
